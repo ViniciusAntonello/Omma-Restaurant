@@ -9,7 +9,7 @@ body {
     font-family: "Montserrat";
 }
 
-main {
+#main-risoto {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
@@ -24,12 +24,12 @@ main {
     padding: 0;
     text-align: center;
     box-shadow: 0px 0px 7px 0px black;
-  position: relative;
+    position: relative;
 }
 
 nav {
     background-color: #FFA000;
-    margin: 0;
+    margin: 0px;
     padding: 0;
     text-align: center;
     margin-top: 1px;
@@ -37,7 +37,7 @@ nav {
 
 .menu {
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 .menu-item {
@@ -50,9 +50,14 @@ nav {
     font-size: 20px;
     text-decoration: none;
     margin: 10px 30px;
+    padding: 0px;
 }
 
-section h1 {
+.menu-item-link:hover {
+    text-decoration: underline;
+}
+
+.titulo-principal {
     color: #FFA000;
     font-size: 50px;
 }
@@ -118,8 +123,6 @@ section h1 {
 
 .preparo {
   width: 30vw;
-  /* margin-right: 10px; */
-  /* text-align: justify; */
 }
 
 aside {
@@ -151,4 +154,221 @@ footer p {
   width: 50vw;  
   font-size: 15px;
   margin-left: 100px;
+}
+
+.imagem-receitas {
+    width: 345px;
+    height: 342px;
+}
+
+#main-receitas {
+    max-width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+#main-receitas h1 {
+    font-size: 50px;
+    color: #FFA000;
+}
+
+#lista-receitas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    justify-content: space-between;
+}
+
+.container-receitas {
+    display: flex;
+    flex-direction: column;
+    margin: 20 auto;
+    align-items: center;
+    font-size: 26px;
+    padding: 10px;
+}
+
+.btn-conferir {
+    color: #fff;
+    background-color: #176902;
+    border: none;
+    width: 185px;
+    height: 48px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-conferir span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-conferir span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-conferir:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn-conferir:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+.container-receitas:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.container-receitas:hover .btn-conferir {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.45);
+}
+
+#container-logoAlo {
+    background-image: url(../img/bannerAlo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 405px;
+    padding: 30px;
+}
+
+#container-logoAlo h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+#container-form {
+    display: flex;
+    gap: 30px;
+    width: 70%;
+    margin: 40px auto;
+}
+
+.container-logoLateral {
+    background-image: url(../img/bannerContato.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 800px;
+}
+
+#container-form h3 {
+    font-size: 30px;
+    color: #FFA000;
+}
+
+#container-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    padding: 20px;
+}
+
+#container-form form * {
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+input, textarea, form {
+    border: 1px solid #FFC107;
+    border-radius: 4px;}
+
+input::placeholder {
+    font-style: italic;
+}
+
+#btn-enviar {
+    background-color: #FFC107;
+    color: #fff;
+    width: 160px;
+    height: 48px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;   
+}
+
+#btn-enviar:hover {
+    background-color: #F5B907;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.45);
+}
+
+#container-banner-sup {
+    background-image: url(../img/banner1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 638px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#container-banner-sup h1 {
+    margin: 0;
+    padding-top: 200px;
+    padding-right: 200px;
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
+}
+
+#destaques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 70px;
+}
+
+#destaques h3{
+    color: #FFA000;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#destaques-receitas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#container-banner-inf {
+    background-image: url(../img/banner-secundario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 772px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#container-banner-inf h2 {
+    color: #fff;
+    font-size: 40px;
+    width: 588px;
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 163px;
+    margin-bottom: 73px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
+}
+
+#container-banner-inf p {
+    color: #fff;
+    font-size: 24px;
+    width: 424px;
+    margin-left: 10%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
